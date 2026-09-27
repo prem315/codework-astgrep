@@ -1,20 +1,41 @@
 {
   "name": "codework-astgrep",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "CodeWork AST search and rewrite plugin powered by ast-grep",
+  "license": "MIT",
+  "author": "Prem Patel",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
-    ".": "./dist/index.js"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
   },
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prem315/codework-astgrep.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prem315/codework-astgrep/issues"
+  },
+  "homepage": "https://github.com/prem315/codework-astgrep#readme",
+  "keywords": [
+    "codework",
+    "codework-plugin",
+    "ast-grep",
+    "search",
+    "ai-agent"
+  ],
   "scripts": {
     "build": "tsc",
+    "watch": "tsc --watch",
     "typecheck": "tsc --noEmit",
-    "prepublishOnly": "tsc"
+    "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
     "@ast-grep/lang-angular": "^0.0.10",
