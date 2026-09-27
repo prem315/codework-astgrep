@@ -1,6 +1,6 @@
 {
   "name": "codework-astgrep",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "CodeWork AST search and rewrite plugin powered by ast-grep",
   "license": "MIT",
   "author": "Prem Patel",

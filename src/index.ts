@@ -72,7 +72,7 @@ const formatMatch = (match: {
 };
 
 export default Plugin.define({
-  id: "codework.tool.astgrep",
+  id: "astgrep.tool.search",
   kind: "tool",
   setup: Effect.fn("AstGrepPlugin.setup")(function* (ctx, options) {
     const fs = yield* SandboxIO.FileSystem;

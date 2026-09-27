@@ -2,7 +2,7 @@
 
 AST search and rewrite plugin for CodeWork, powered by [ast-grep](https://ast-grep.github.io/).
 
-It registers the `ast_search` tool (plugin ID `codework.tool.astgrep`), letting agents search code by syntax tree instead of text. Patterns capture structure (`$NAME`, `$$$ARGS`), and `rewrite` previews a substitution. Nothing is written back to disk.
+It registers the `ast_search` tool (plugin ID `astgrep.tool.search`), letting agents search code by syntax tree instead of text. Patterns capture structure (`$NAME`, `$$$ARGS`), and `rewrite` previews a substitution. Nothing is written back to disk.
 
 ## Installation
 
@@ -60,7 +60,7 @@ Configure it with a second entry that names the plugin, next to the one that loa
   "plugins": [
     "codework-astgrep",
     {
-      "plugin": "codework.tool.astgrep",
+      "plugin": "astgrep.tool.search",
       "options": { "limit": 40 }
     }
   ]
