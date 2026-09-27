@@ -1,0 +1,59 @@
+{
+  "name": "codework-astgrep",
+  "version": "0.1.0",
+  "description": "CodeWork AST search and rewrite plugin powered by ast-grep",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "tsc"
+  },
+  "dependencies": {
+    "@ast-grep/lang-angular": "^0.0.10",
+    "@ast-grep/lang-bash": "^0.0.8",
+    "@ast-grep/lang-bicep": "^0.0.2",
+    "@ast-grep/lang-c": "^0.0.6",
+    "@ast-grep/lang-cpp": "^0.0.6",
+    "@ast-grep/lang-csharp": "^0.0.6",
+    "@ast-grep/lang-css": "^0.0.7",
+    "@ast-grep/lang-dart": "^0.0.7",
+    "@ast-grep/lang-elixir": "^0.0.7",
+    "@ast-grep/lang-glimmer-javascript": "^0.0.2",
+    "@ast-grep/lang-glimmer-typescript": "^0.0.2",
+    "@ast-grep/lang-go": "^0.0.6",
+    "@ast-grep/lang-haskell": "^0.0.7",
+    "@ast-grep/lang-html": "^0.0.7",
+    "@ast-grep/lang-java": "^0.0.7",
+    "@ast-grep/lang-javascript": "^0.0.7",
+    "@ast-grep/lang-json": "^0.0.7",
+    "@ast-grep/lang-kotlin": "^0.0.7",
+    "@ast-grep/lang-lua": "^0.0.7",
+    "@ast-grep/lang-markdown": "^0.0.6",
+    "@ast-grep/lang-php": "^0.0.7",
+    "@ast-grep/lang-python": "^0.0.6",
+    "@ast-grep/lang-ruby": "^0.0.7",
+    "@ast-grep/lang-rust": "^0.0.7",
+    "@ast-grep/lang-scala": "^0.0.7",
+    "@ast-grep/lang-sql": "^0.0.8",
+    "@ast-grep/lang-swift": "^0.0.8",
+    "@ast-grep/lang-toml": "^0.0.9",
+    "@ast-grep/lang-tsx": "^0.0.7",
+    "@ast-grep/lang-typescript": "^0.0.7",
+    "@ast-grep/lang-yaml": "^0.0.6",
+    "@ast-grep/napi": "^0.39.0",
+    "@codeworksh/plugin": "0.0.1-dev.20260925150557"
+  },
+  "devDependencies": {
+    "@types/node": "^26.5.1",
+    "effect": "4.0.0-rc.115",
+    "typescript": "^5.9.0"
+  }
+}
